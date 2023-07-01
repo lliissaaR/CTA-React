@@ -6,7 +6,7 @@ import { SelectedPage } from '@/shared/types'
 
 function App() {
 
-  const [selectedPage, setSelectedPage] = useState(SelectedPage.Home)
+  const [selectedPage, setSelectedPage] = useState(SelectedPage.Accueil)
   return (
     <>
       <div className='app'>

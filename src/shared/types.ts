@@ -1,9 +1,11 @@
 export enum SelectedPage {
-    Home = "home",
-    APropos ="apropos",
-    Carnetdevoyage ="carnetdevoyage",
-    Podcast ="podcast",
+    Accueil = "accueil",
+    Destinations ="destinations",
+    Conseils ="conseils",
+    Bonsplans ="Bonsplans",
     Prestations ="prestations",
     MeContacter ="mecontacter",
   
   }
+
+  

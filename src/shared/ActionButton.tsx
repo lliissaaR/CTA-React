@@ -4,8 +4,7 @@ import { SelectedPage } from "./types"
 type Props = {
   children: React.ReactNode,
   setSelectedPage: (value:SelectedPage) => void
-  className?: string;
-  onClick: () => void;
+  
 }
 
 const ActionButton = ({children, setSelectedPage}: Props) => {

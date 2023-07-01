@@ -6,6 +6,8 @@ import { SelectedPage } from "@/shared/types"
 import useMediaQuery from "@/hooks/useMediaQuery"
 import ActionButton from "@/shared/ActionButton"
 
+
+
 type Props = {
     selectedPage: SelectedPage
     setSelectedPage: (value: SelectedPage) => void;
@@ -22,7 +24,7 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
           <div className="nav2">
             {/* LEFT SIDE */}
             <div className="nav3">
-              <img alt="logo" src="./assets/img/logo.ico"/>
+              <img className="logonav" alt="logo" src={Logo}/>
   
               {/* RIGHT SIDE */}
 
@@ -31,19 +33,19 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
                 <div className="nav4">
                   <div className="nav5">
                     <Link 
-                          page="A Propos" 
+                          page="Accueil" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
-                          page="Carnet de voyage" 
+                          page="Destinations" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
-                          page="Home" 
+                          page="Conseils" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
-                          page="Podcast" 
+                          page="Bons plans" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
@@ -53,22 +55,33 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
                   </div>
   
                 <div className="nav6">
-                  <button>Me contacter</button>
+                  <ActionButton setSelectedPage={setSelectedPage} >Me contacter</ActionButton>
                 </div> 
               </div>) : (
 
-                  <ActionButton setSelectedPage={setSelectedPage} className="buttonburger"
+                  <button className="buttonburger"
                           onClick={() => setIsMenuToggled(!isMenuToggled)}> 
 
                     <Bars3Icon className="iconburger" />
 
 
-                  </ActionButton>
+                  </button>
 
                        )}
             </div>
           </div>
         </div>
+
+            {/* Menu mobile */}
+            {!isAboveMediumScreens && isMenuToggled && (
+
+              <div className="fixed right-0 bottom-0 z-40 h-full">
+
+              </div>
+
+            )}
+
+
       </nav>
     );
   };
