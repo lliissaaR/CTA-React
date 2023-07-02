@@ -112,3 +112,36 @@ body
     height: 6rem;
 }
 
+
+.mobilemenucadre {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 40;
+    height: 100%;
+    width: 300px;
+    background-color: #FFE1E0;
+    --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.closediv {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem;
+}
+
+.closeicon {
+    height: 1.5rem;
+    width: 1.5rem;
+    color:#5E0000;
+}
+
+.mobilemenulinks {
+    margin-left: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}

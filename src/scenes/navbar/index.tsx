@@ -13,11 +13,12 @@ type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 }
 
-const Navbar = ({selectedPage, setSelectedPage}: Props) => {
+const Navbar = ({ selectedPage, setSelectedPage}: Props) => {
 
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
-    
+  
+
     return (
       <nav>
         <div className="nav1">
@@ -75,8 +76,38 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
             {/* Menu mobile */}
             {!isAboveMediumScreens && isMenuToggled && (
 
-              <div className="fixed right-0 bottom-0 z-40 h-full">
+              <div className="mobilemenucadre">
+                {/* ICONE FERMER */}
+                <div className="closediv">
+                  <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
+                    <XMarkIcon className="closeicon"/>
+                  </button>
+                </div>
 
+                {/* MENU */}
+
+                <div className="mobilemenulinks">
+                    <Link 
+                          page="Accueil" 
+                          selectedPage={selectedPage} 
+                          setSelectedPage={setSelectedPage}/>
+                    <Link 
+                          page="Destinations" 
+                          selectedPage={selectedPage} 
+                          setSelectedPage={setSelectedPage}/>
+                    <Link 
+                          page="Conseils" 
+                          selectedPage={selectedPage} 
+                          setSelectedPage={setSelectedPage}/>
+                    <Link 
+                          page="Bons plans" 
+                          selectedPage={selectedPage} 
+                          setSelectedPage={setSelectedPage}/>
+                    <Link 
+                          page="Prestations" 
+                          selectedPage={selectedPage} 
+                          setSelectedPage={setSelectedPage}/>
+                  </div>
               </div>
 
             )}
