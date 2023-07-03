@@ -33,30 +33,30 @@ const Navbar = ({ selectedPage, setSelectedPage}: Props) => {
                 
                 <div className="nav4">
                   <div className="nav5">
-                    <Link 
+                  <Link 
                           page="Accueil" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
-                          page="Destinations" 
+                          page="Disciplines" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
-                          page="Conseils" 
+                          page="Les Coachs" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
-                          page="Bons plans" 
+                          page="Inscriptions" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
-                          page="Prestations" 
+                          page="Nos Victoires" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                   </div>
   
                 <div className="nav6">
-                  <ActionButton setSelectedPage={setSelectedPage} >Me contacter</ActionButton>
+                  <ActionButton setSelectedPage={setSelectedPage} >Nous contacter</ActionButton>
                 </div> 
               </div>) : (
 
@@ -92,19 +92,19 @@ const Navbar = ({ selectedPage, setSelectedPage}: Props) => {
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
-                          page="Destinations" 
+                          page="Disciplines" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
-                          page="Conseils" 
+                          page="Les Coachs" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
-                          page="Bons plans" 
+                          page="Inscriptions" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                     <Link 
-                          page="Prestations" 
+                          page="Nos Victoires" 
                           selectedPage={selectedPage} 
                           setSelectedPage={setSelectedPage}/>
                   </div>

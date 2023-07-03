@@ -145,3 +145,92 @@ body
     font-size: 1.5rem;
     line-height: 2rem;
 }
+
+.bouttonaccueil {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.accueil {
+    background-color:#F8F4EB;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+@media (min-width: 1060px) {
+    .accueil {
+        height: 100%;
+        padding-bottom: 0px;
+    }
+}
+
+.accueil2 {
+    margin-left: 8rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1060px) {
+    .accueil2 {
+        display: flex;
+        height: 83.333333%;
+    }}
+
+.boxtext {
+    
+    z-index: 10;
+    margin-top: 8rem;
+}
+
+@media (min-width: 1060px) {
+    .boxtext {
+        flex-basis: 60%;
+    }
+}
+
+@media (min-width: 1060px) {
+    .boxtext2 {
+        margin-top: -5rem;
+    }
+}
+
+.accueilimg {
+    height: 37rem;
+    
+}
+
+.boutonsaccueil {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 1060px) {
+    .boutonsaccueil {
+        justify-content: flex-start;
+    }
+}
+
+.texteaccueil {
+        margin-top: 2rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+}
+
+.divaccueilimg {
+        display: flex;
+        flex-basis: 60%;
+        justify-content: center;
+        z-index: 10;
+}
+
+@media (min-width: 1060px) {
+    .divaccueilimg {
+        margin-left: 10rem;
+        margin-top: 4rem;
+        justify-items: end;
+    }
+}
